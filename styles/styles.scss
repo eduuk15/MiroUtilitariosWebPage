@@ -1,0 +1,18 @@
+@import 'navbar';
+@import 'destaque';
+@import 'servicos';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+.home {
+    &__container {
+        &--img {
+            width: 100%;
+        }
+    }
+}

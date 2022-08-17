@@ -1,0 +1,72 @@
+@import 'colors';
+@import 'media-queries';
+
+%align-center {
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    background: $dark;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem calc((100vw - 1200px) /2);
+    z-index: 10;
+    position: relative;
+
+    &__logo {
+        color: $orange;
+        cursor: pointer;
+        text-decoration: none;
+        font-size: 2rem;
+        margin-left: 24px;
+        font-weight: bolder;
+        @extend %align-center;
+
+        &:hover {
+            color: $light;
+            transition: all -.3s ease;
+        }
+    }
+
+    &__bars {
+        opacity: 0;
+
+        @include tablet {
+            color: $light;
+            opacity: 1;
+            position: absolute;
+            top: 22px;
+            right: 20px;
+            font-size: 2rem;
+        }
+    }
+
+    &__menu {
+        @extend %align-center;
+        list-style: none;
+        text-align: center;
+        margin-right: 24px;
+
+        &--links {
+            color: $light;
+            @extend %align-center;
+            justify-content: center;
+            text-decoration: none;
+            padding: 0 1rem;
+        
+            &:hover {
+                color: $orange;
+                transition: all -.3s ease;
+            }
+        }
+
+        @include tablet {
+            display: none;
+        }
+        @include mobile {
+            display: none;
+        }
+    }
+}

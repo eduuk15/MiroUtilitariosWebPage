@@ -1,0 +1,123 @@
+@import 'colors';
+@import 'media-queries';
+
+%align-center {
+    display: flex;
+    align-items: center;
+}
+
+.destaque {
+    background-image: url(../images/FUNDO_3_escuro.png);
+    width: 100%;
+    height: 786px;
+    justify-content: space-between;
+    padding: 0.5rem calc((100vw - 1200px) /2);
+    z-index: 10;
+    position: relative;
+
+    &__titulo {
+        color: $orange;
+        text-align: center;
+        font-size: 2em;
+    }
+
+    &__imagens {
+
+        @include tablet {
+            display: none;
+        }
+
+        @include mobile {
+            display: none;
+        }
+
+        &--carros {
+            margin: 12px;
+            height: 280px;
+            width: 370px;
+        }
+
+        &--legendas--nome {
+            color: $light;
+            margin: 12px;
+            font-size: 1.8em;
+        }
+
+        &--legendas--marcas {
+            padding-right: 5px;
+            vertical-align: -8px;
+        }
+
+        &--legendas--valor {
+            color: $light;
+            margin: 12px;
+            width: min-content;
+            background: $dark;
+            font-size: 1.9em;
+        }
+        
+        &--legendas--info {
+            color: $light;
+            margin: 12px;
+            font-size: 1.1em;
+        }
+    }
+
+    #destaque__imagens--1 {
+        display: flex;
+    }
+    #destaque__imagens--2 {
+        display: none;
+    }
+
+    &__botoes {
+        text-align: center;
+        padding-top: 20px;
+
+        // &--checkbox {
+
+        //}
+
+        &--label {
+            color: $light;
+            font-size: 1.5em;
+            &:hover {
+                cursor: pointer;
+                color: $orange;
+                transition: all -.3s ease;
+            }
+        }
+    }
+
+    &__link {
+        text-align: center;
+        padding-top: 50px;
+        &--link {
+            color: $orange;
+            text-decoration: none;
+            justify-content: center;
+            font-size: 1.8em;
+        
+            &:hover {
+                color: $light;
+                transition: all -.3s ease;
+            }
+        }
+    }
+
+    &__botoes {
+        &--botao {
+            margin: 0 10px;
+            border: none;
+            background: none;
+            color: $light;
+            font-size: 3em;
+
+            &:hover {
+                cursor: pointer;
+                color: $orange;
+                transition: all -.3s ease;
+            }
+        }
+    }
+}

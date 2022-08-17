@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<script>
+    function ocultarExibirProximo() {
+        document.getElementById("destaque__imagens--1").style.display = "none";
+        document.getElementById("destaque__imagens--2").style.display = "flex";
+    }
+    function ocultarExibirAnterior() {
+        document.getElementById("destaque__imagens--2").style.display = "none";
+        document.getElementById("destaque__imagens--1").style.display = "flex";
+    }
+</script>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script src="https://kit.fontawesome.com/15705e966e.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <title> Miro Utilitários</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="/" class="navbar__logo">Miro Utilitários</a>
+        <div class="navbar__bars">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="navbar__menu">
+            <a href="#destaque" class="navbar__menu--links">Veículos em Destaque</a>
+            <a href="" class="navbar__menu--links">Estoque</a>
+            <a href="" class="navbar__menu--links">Sobre Nós</a>
+            <a href="" class="navbar__menu--links">Contato</a>
+        </div>
+    </nav>
+    <div class="home"></div>
+    <div class="home__container">
+        <img src="./images/MiroUtilitariosImagens.jpeg" alt="banner" class="home__container--img" />
+    </div>
+    </div>
+    <div class="destaque" id="destaque">
+        <div class="destaque__titulo">
+            <h1>Veículos em Destaque</h1>
+        </div>
+        <div class="destaque__imagens" id="destaque__imagens--1">
+            <figure>
+                <p>
+                    <img src="images/HILUX.jpg" alt="hilux" class="destaque__imagens--carros">
+                <figcaption class="destaque__imagens--legendas--nome">
+                    <p>
+                        <img src="https://img.icons8.com/color/44/000000/toyota.png"
+                            class="destaque__imagens--legendas--marcas" />
+                        TOYOTA HILUX
+                    </p>
+                </figcaption>
+                <figcaption class="destaque__imagens--legendas--valor">R$320.000,00</figcaption>
+                <figcaption class="destaque__imagens--legendas--info">
+                    <p>
+                        <i class="fa-solid fa-gauge-high"></i>
+                        88000km
+                    </p>
+                </figcaption>
+                <figcaption class="destaque__imagens--legendas--info">
+                    <p>
+                        <i class="fa-solid fa-file-invoice"></i>
+                        2018/2019 - Automático - Diesel
+                    </p>
+                </figcaption>
+                </p>
+            </figure>
+            <figure>
+                <p>
+                    <img src="images/SW4.jpg" alt="sw4" class="destaque__imagens--carros">
+                <figcaption class="destaque__imagens--legendas--nome">
+                    <p>
+                        <img src="https://img.icons8.com/color/44/000000/toyota.png"
+                            class="destaque__imagens--legendas--marcas" />
+                        TOYOTA SW4
+                    </p>
+                </figcaption>
+                <figcaption class="destaque__imagens--legendas--valor">R$320.000,00</figcaption>
+                <figcaption class="destaque__imagens--legendas--info">
+                    <p>
+                        <i class="fa-solid fa-gauge-high"></i>
+                        20000km
+                    </p>
+                </figcaption>
+                <figcaption class="destaque__imagens--legendas--info">
+                    <p>
+                        <i class="fa-solid fa-file-invoice"></i>
+                        2018/2019 - Automático - Diesel
+                    </p>
+                </figcaption>
+                </p>
+            </figure>
+            <figure>
+                <p>
+                    <img src="images/RANGER.jpg" alt="ranger" class="destaque__imagens--carros">
+                <figcaption class="destaque__imagens--legendas--nome">
+                    <p>
+                        <img src="https://img.icons8.com/color/44/000000/ford.png"
+                            class="destaque__imagens--legendas--marcas" />
+                        FORD RANGER
+                    </p>
+                </figcaption>
+                <figcaption class="destaque__imagens--legendas--valor">R$320.000,00</figcaption>
+                <figcaption class="destaque__imagens--legendas--info">
+                    <p>
+                        <i class="fa-solid fa-gauge-high"></i>
+                        188000km
+                    </p>
+                </figcaption>
+                <figcaption class="destaque__imagens--legendas--info">
+                    <p>
+                        <i class="fa-solid fa-file-invoice"></i>
+                        2018/2019 - Automático - Diesel
+                    </p>
+                </figcaption>
+                </p>
+            </figure>
+        </div>
+        <div class="destaque__imagens" id="destaque__imagens--2">
+            <figure>
+                <p>
+                    <img src="images/HILUX.jpg" alt="hilux" class="destaque__imagens--carros">
+                <figcaption class="destaque__imagens--legendas--nome">
+                    <p>
+                        <img src="https://img.icons8.com/color/44/000000/toyota.png"
+                            class="destaque__imagens--legendas--marcas" />
+                        TOYOTA HILUX
+                    </p>
+                </figcaption>
+                <figcaption class="destaque__imagens--legendas--valor">R$320.000,00</figcaption>
+                <figcaption class="destaque__imagens--legendas--info">
+                    <p>
+                        <i class="fa-solid fa-gauge-high"></i>
+                        88000km
+                    </p>
+                </figcaption>
+                <figcaption class="destaque__imagens--legendas--info">
+                    <p>
+                        <i class="fa-solid fa-file-invoice"></i>
+                        2018/2019 - Automático - Diesel
+                    </p>
+                </figcaption>
+                </p>
+            </figure>
+            <figure>
+                <p>
+                    <img src="images/SW4.jpg" alt="sw4" class="destaque__imagens--carros">
+                <figcaption class="destaque__imagens--legendas--nome">
+                    <p>
+                        <img src="https://img.icons8.com/color/44/000000/toyota.png"
+                            class="destaque__imagens--legendas--marcas" />
+                        TOYOTA SW4
+                    </p>
+                </figcaption>
+                <figcaption class="destaque__imagens--legendas--valor">R$320.000,00</figcaption>
+                <figcaption class="destaque__imagens--legendas--info">
+                    <p>
+                        <i class="fa-solid fa-gauge-high"></i>
+                        20000km
+                    </p>
+                </figcaption>
+                <figcaption class="destaque__imagens--legendas--info">
+                    <p>
+                        <i class="fa-solid fa-file-invoice"></i>
+                        2018/2019 - Automático - Diesel
+                    </p>
+                </figcaption>
+                </p>
+            </figure>
+            <figure>
+                <p>
+                    <img src="images/RANGER.jpg" alt="ranger" class="destaque__imagens--carros">
+                <figcaption class="destaque__imagens--legendas--nome">
+                    <p>
+                        <img src="https://img.icons8.com/color/44/000000/ford.png"
+                            class="destaque__imagens--legendas--marcas" />
+                        DIV2
+                    </p>
+                </figcaption>
+                <figcaption class="destaque__imagens--legendas--valor">R$370.000,00</figcaption>
+                <figcaption class="destaque__imagens--legendas--info">
+                    <p>
+                        <i class="fa-solid fa-gauge-high"></i>
+                        188000km
+                    </p>
+                </figcaption>
+                <figcaption class="destaque__imagens--legendas--info">
+                    <p>
+                        <i class="fa-solid fa-file-invoice"></i>
+                        2018/2019 - Automático - Diesel
+                    </p>
+                </figcaption>
+                </p>
+            </figure>
+        </div>
+        <div class="destaque__botoes">
+            <button class="destaque__botoes--botao" onclick="ocultarExibirAnterior()"><</button>
+            <button class="destaque__botoes--botao" onclick="ocultarExibirProximo()">></button>
+        </div>
+        <div class="destaque__link">
+            <a href="" class="destaque__link--link">Confira o estoque completo!</a>
+        </div>
+    </div>
+    <div class="servicos">
+        <div class="servicos__titulo">
+            <h1>Serviços</h1>
+        </div>
+        <div class="servicos__itens">
+            <div class="servicos__itens--venda--icone">
+                <i class="fa-solid fa-money-bill-transfer"></i>
+            </div>
+            <div class="servicos__itens--venda--titulo">
+                    Compra e Venda
+            </div>
+            <div class="servicos__itens--venda--desc">
+                Vendemos diversos tipos de automóveis, especialmente utilitários, carros com capacidade para levar cargas e pessoas ao mesmo tempo (caminhhonetes e camionetas). 
+                Além disso, aceitamos o seu veículo como entrada para facilitar a sua compra!
+            </div>
+            <div class="servicos__itens--financiamento--icone">
+                <i class="fa-solid fa-hand-holding-dollar"></i>
+            </div>
+            <div class="servicos__itens--financiamento--titulo">
+                    Financiamento
+            </div>
+            <div class="servicos__itens--financiamento--desc">
+                Financiamos a compra do seu automóvel em diversos e variados tipos de parcelas! Consulte-nos para melhores informações.
+            </div>
+            <div class="servicos__itens--testdrive--icone">
+                <i class="fa-solid fa-car"></i>
+            </div>
+            <div class="servicos__itens--testdrive--titulo">
+                    Test-Drive
+            </div>
+            <div class="servicos__itens--testdrive--desc">
+                Agendamos sua experiência no veículo de sua escolha e na hora mais confortável para você. Contate-nos e agende seu test-drive! 
+            </div>
+            <div class="servicos__itens--seguro--icone">
+                <i class="fa-solid fa-people-roof"></i>
+            </div>
+            <div class="servicos__itens--seguro--titulo">
+                    Seguro
+            </div>
+            <div class="servicos__itens--seguro--desc">
+                Asseguramos o seu automóvel para garantir a sua segurança e a de sua família! Confira os seguros ofertados.  
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

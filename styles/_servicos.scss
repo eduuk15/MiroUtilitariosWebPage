@@ -1,0 +1,132 @@
+@import 'colors';
+@import 'media-queries';
+
+%align-center {
+    display: flex;
+    align-items: center;
+}
+
+.servicos {
+    margin-top: 4px;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0.5rem calc((100vw - 1200px) /2);
+    z-index: 10;
+    position: relative;
+    background-color: $dark;
+
+    &__titulo {
+        color: $orange;
+        text-align: center;
+        font-size: 2em;
+        margin-top: 20px;
+    }
+
+    &__itens {
+        display: inline-block;
+        width: 100%;
+
+        &--venda--icone {
+            float: left;
+            border-width: 5px;
+            color: $light;
+            font-size: 6em;
+            margin-top: 100px;
+            padding: 40px;
+            border-color: $green;
+            border-style: solid;
+            border-radius: 50%;
+        }
+        &--venda--titulo {
+            margin-top: 80px;
+            font-weight: bold;
+            color: $orange;
+            font-size: 3em;
+        }
+        &--venda--desc {
+            margin-top: 20px;
+            margin-left: 240px;
+            color: $light;
+            font-size: 1.7em;
+        }
+
+        
+        &--financiamento--icone {
+            float: right;
+            border-width: 5px;
+            color: $light;
+            font-size: 6em;
+            margin-top: 100px;
+            padding: 40px;
+            border-color: $green;
+            border-style: solid;
+            border-radius: 50%;
+        }
+        &--financiamento--titulo {
+            float: right;
+            margin-top: 80px;
+            font-weight: bold;
+            color: $orange;
+            font-size: 3em;
+        }
+        &--financiamento--desc {
+            float: right;
+            margin-top: -130px;
+            margin-right: 200px;
+            color: $light;
+            font-size: 2em;
+        }
+
+
+        &--testdrive--icone {
+            float: left;
+            border-width: 5px;
+            color: $light;
+            font-size: 6em;
+            margin-top: 100px;
+            padding: 40px;
+            border-color: $green;
+            border-style: solid;
+            border-radius: 50%;
+        }
+        &--testdrive--titulo {
+            margin-top: 360px;
+            font-weight: bold;
+            color: $orange;
+            font-size: 3em;
+        }
+        &--testdrive--desc {
+            margin-top: 30px;
+            margin-left: 240px;
+            color: $light;
+            font-size: 2em;
+        }
+
+        &--seguro--icone {
+            float: right;
+            border-width: 5px;
+            color: $light;
+            font-size: 6em;
+            margin-top: 100px;
+            padding: 40px;
+            border-color: $green;
+            border-style: solid;
+            border-radius: 50%;
+        }
+        &--seguro--titulo {
+            float: right;
+            margin-top: 80px;
+            font-weight: bold;
+            color: $orange;
+            font-size: 3em;
+        }
+        &--seguro--desc {
+            float: right;
+            margin-top: -130px;
+            margin-right: 200px;
+            color: $light;
+            font-size: 2em;
+        }
+    }
+
+}
