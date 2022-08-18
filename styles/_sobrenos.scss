@@ -1,0 +1,37 @@
+@import 'colors';
+@import 'media-queries';
+
+%align-center {
+    display: flex;
+    align-items: center;
+}
+
+.sobrenos {
+    margin-top: 4px;
+    justify-content: space-between;
+    padding: 0.5rem calc((100vw - 1200px) /2);
+    z-index: 10;
+    position: relative;
+    background-color: $dark;
+
+    &__titulo {
+        color: $orange;
+        text-align: center;
+        font-size: 2em;
+        margin-top: 20px;
+    }
+
+    &__container {
+        width: 150px;
+        &--imagens{
+            &--frente {
+                width: 150px;
+            }
+            &--lateral {
+                width: 150px;
+            }
+        }
+    }
+
+    
+}

@@ -287,6 +287,35 @@
   font-size: 2em;
 }
 
+.navbar__logo, .navbar__menu, .navbar__menu--links {
+  display: flex;
+  align-items: center;
+}
+
+.sobrenos {
+  margin-top: 4px;
+  justify-content: space-between;
+  padding: 0.5rem calc((100vw - 1200px) / 2);
+  z-index: 10;
+  position: relative;
+  background-color: #020001;
+}
+.sobrenos__titulo {
+  color: #f29f1b;
+  text-align: center;
+  font-size: 2em;
+  margin-top: 20px;
+}
+.sobrenos__container {
+  width: 150px;
+}
+.sobrenos__container--imagens--frente {
+  width: 150px;
+}
+.sobrenos__container--imagens--lateral {
+  width: 150px;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
