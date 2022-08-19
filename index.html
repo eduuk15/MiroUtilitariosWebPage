@@ -8,6 +8,16 @@
         document.getElementById("destaque__imagens--2").style.display = "none";
         document.getElementById("destaque__imagens--1").style.display = "flex";
     }
+
+    window.onscroll = function() {trocaImagemFundo()};
+    function trocaImagemFundo() {
+        const sobrenos = document.getElementById("sobrenos");
+        const delay = 5000;
+        if (document.documentElement.scrollTop > 200)
+        {
+            sobrenos.style.backgroundImage = "url('images/MiroLateral.jpg')";
+        }
+    }
 </script>
 <html>
 
@@ -252,15 +262,11 @@
             </div>
         </div>
     </div>
-    <div class="sobrenos" id="sobrenos">
+    <div class="sobrenos" id="sobrenos" onscroll="trocaImagemFundo()">
         <div class="sobrenos__titulo">
             <h1>Sobre Nós</h1>
         </div>
         <div class="sobrenos__container">
-            <div class="sobrenos__container--imagens">
-                <img src="images/MiroFrente.jpg" class="sobrenos__container--imagens--frente">
-                <img src="images/MiroLateral.jpg" class="sobrenos__container--imagens--lateral">
-            </div>
             <div class="sobrenos__container--legendas">
                 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
             </div>
